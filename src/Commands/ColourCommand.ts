@@ -32,7 +32,7 @@ export class ColourCommand extends CommandBase {
     public async run(command: CommandParser) {
 
 
-        const matches = command.arguments[ 0 ].name.match(/>color #(.*)/);
+        const matches = command.arguments[ 0 ].name.match(/#(.*)/);
 
         if (matches.length > 0) {
 
